@@ -14,6 +14,7 @@ body {
     grid-template-rows: auto;
     grid-template-areas: 
         "banner banner"
+        "side main"
         "footer footer";
         grid-gap: 4px;
     
@@ -26,9 +27,8 @@ body {
 
 .box {
     padding: 20px;
-    /* border-radius: 10px; */
-    background-color: #ddd;
-}
+    border-radius: 10px; 
+    }
 
 /* Area colouring... */
 
@@ -54,17 +54,17 @@ body {
     grid-area: banner;
 }
 
-.nav {
-    grid-area: nav;
+.side {
+    grid-area: side;
     background-color: #0CBABA;  /* Tiffany Blue */
-    font-size: 150%;
+    /* font-size: 150%; */
     text-align: center;
 }
 
 .main {
     grid-area: main;
     background-color: #01BAEF;  /* Cyan process */
-    border: solid 1px #CCC;
+    border: solid 1px rgb(110, 110, 110);
 }
 
 
@@ -79,17 +79,17 @@ h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Navigation Links */
-.nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
-.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
+/* side Links */
+a.side{font-weight: bold; text-decoration: none;}
+a.side:link, a.side:visited {color: #dba9dd;} /*pale pink */
+a.side:hover {color: #e686de; } /* pink */
 
 
 /* links in page */
 a {font-weight: bold;}
-a:link{color: #AA0000;} /*dark_red */
-a:visited{color: #111177;} /* dark blue */
-a:hover{color: #000;}    /* Black*/
+a:link{color: #dba9dd;} /*Pale pink */
+a:visited{color: #a3a3a3;} /* grey */
+a:hover{color: #e686de;}    /* pink*/
 
 
 /* Contact Form Styling */
