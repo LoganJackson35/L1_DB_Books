@@ -1,26 +1,6 @@
-
 <!DOCTYPE HTML>
 
 <html lang="en">
-
-<?php
-    session_start();
-    include "config.php";
-
-    // connect to database...
-
-    $dbconnect=mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME)
-
-    if (mysqli_connect_errno())
-
-    {
-        echo "Connection Failed:".mysqli_connect_error();
-         exit;
-    }
-?>
-
-
-
 
 <head>
     <meta charset="UTF-8">
